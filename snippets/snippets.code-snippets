@@ -1,0 +1,280 @@
+{
+  //! GSAP Methods
+  "GSAP to Method": {
+    "prefix": "gsapto,gsapto,gto,gsto",
+    "body": [
+      "gsap.to(\"${1:attribute}\", {",
+      "\t${2:properties}",
+      "});"
+    ],
+    "description": "GSAP .to() method: Animates an element to a new state over a specified duration."
+  },
+  "GSAP from Method": {
+    "prefix": "gsfr,gsapfrom,gsf",
+    "body": [
+      "gsap.from(\"${1:attribute}\", {",
+      "\t${2:properties}",
+      "});"
+    ],
+    "description": "GSAP .from() method:  Starts an element's animation from a specified state, animating it to its current state."
+  },
+  "GSAP timeline": {
+    "prefix": "gstl,gsaptime",
+    "body": [
+      "let tl = gsap.timeline({",
+      "\t${1:options}",
+      "});"
+    ],
+    "description": "GSAP timeline: Creates a sequence of animations that are linked and controlled together."
+  },
+  "GSAP fromTo Method": {
+    "prefix": "gsft,gsapfrom",
+    "body": [
+      "gsap.fromTo(\"${1:id}\", {",
+      "\t${2:startProperties}",
+      "}, {",
+      "\t${3:endProperties}",
+      "});"
+    ],
+    "description": "GSAP .fromTo() method: Animates an element from one state to another over a specified duration."
+  },
+  "GSAP set Method": {
+    "prefix": "gsset",
+    "body": [
+      "gsap.set(\"${1:id}\", {",
+      "\t${2:properties}",
+      "});"
+    ],
+    "description": "GSAP .set() method:  Instantly sets the properties of an element without animation."
+  },
+  //! GSAP Properties
+  "GSAP delay Property": {
+    "prefix": "de,del,dela",
+    "body": [
+      "delay: ${1:0.5},"
+    ],
+    "description": "GSAP delay property: Specifies the amount of time (in seconds) to wait before the animation starts."
+  },
+  "GSAP Scale Property": {
+    "prefix": "sc,sca,scal",
+    "body": [
+      "scale: ${1:0.5},"
+    ],
+    "description": "GSAP Scale property: Scales an element by adjusting its size. You can use scale, scaleX, or scaleY for more control. "
+  },
+  "GSAP Duration Property": {
+    "prefix": "du,dura,durati",
+    "body": [
+      "duration: ${1:0.5},"
+    ],
+    "description": "GSAP Duration property: Sets the time (in seconds) it takes for the animation to complete"
+  },
+  "GSAP Repeat Property": {
+    "prefix": "re,rep,repe,repea",
+    "body": [
+      "repeat: ${1:0.5},"
+    ],
+    "description": "GSAP Repeat property: Controls how many times the animation should repeat. A value of -1 makes it repeat infinitely."
+  },
+  "GSAP Opacity Property": {
+    "prefix": "op,opa,opci",
+    "body": [
+      "opacity: ${1:0.5},"
+    ],
+    "description": "GSAP Opacity property: Controls the transparency of the element, where 0 is fully transparent and 1 is fully opaque."
+  },
+  "GSAP Yoyo Property": {
+    "prefix": "yo",
+    "body": [
+      "yoyo: ${1:true},"
+    ],
+    "description": "GSAP yoyo property:  When set to true, the animation reverses direction on every repeat, giving a back-and-forth effect."
+  },
+  "GSAP Rotation Property": {
+    "prefix": "ro,rota,rotati",
+    "body": [
+      "rotation: ${1:90},"
+    ],
+    "description": "GSAP rotation property: Rotates an element by a specified degree."
+  },
+  "GSAP Paused Property": {
+    "prefix": "pau,paus",
+    "body": [
+      " paused: ${1:true},"
+    ],
+    "description": "GSAP paused property: Determines whether the animation should start paused."
+  },
+  "GSAP onStart Property": {
+    "prefix": "onSt,onSta",
+    "body": [
+      " onStart: ${1:function},"
+    ],
+    "description": "GSAP onStart callback:A callback function that fires as soon as the animation starts."
+  },
+  "GSAP transform Property": {
+    "prefix": "tra,transf",
+    "body": [
+      "transform: ${1:translate()};"
+    ],
+    "description": "GSAP transform property:  Transforms include movements like x, y, rotation, scale, etc. All these can be applied with GSAP's to, from, or fromTo."
+  },
+  "GSAP  repeatDelay Property": {
+    "prefix": "repea,repeade,repeatdelay",
+    "body": [
+      "repeatDelay: ${1:1};"
+    ],
+    "description": "GSAP  repeatDelay property: Adds a delay (in seconds) between each repeat of the animation."
+  },
+  "GSAP ease Property": {
+    "prefix": "ea,eas",
+    "body": [
+      "ease: \"${1:power1.inOut}\","
+    ],
+    "description": "GSAP ease property: Defines the rate of change of the animation over time, giving it a more natural feel (e.g., slow start, fast middle, slow end)."
+  },
+  "GSAP onComplete Callback": {
+    "prefix": "onc,oncomp,oncomplete",
+    "body": [
+      "onComplete: ${1:callback},"
+    ],
+    "description": "GSAP onComplete callback: A callback function that is executed when the animation finishes."
+  },
+  "GSAP onUpdate Callback": {
+    "prefix": "onu,onupdat",
+    "body": [
+      "onUpdate: ${1:callback},"
+    ],
+    "description": "GSAP onUpdate callback: A callback function that is called every time the animation updates (usually on every frame)."
+  },
+  //* GSAP Special Methods
+  "GSAP Stagger Property": {
+    "prefix": "sta,stagg",
+    "body": [
+      "stagger: ${1:0.1},"
+    ],
+    "description": "GSAP stagger property: Offsets the start time of animations applied to multiple elements, creating a cascading effect."
+  },
+  "GSAP killTweensOf": {
+    "prefix": "gskill,gsakill",
+    "body": [
+      "gsap.killTweensOf(${1:target});"
+    ],
+    "description": "GSAP killTweensOf() method: Immediately stops all tweens (animations) associated with the target."
+  },
+  //? GSAP Utils
+  "GSAP utils random": {
+    "prefix": "gsrand,gsaurandom,gsautilrand",
+    "body": [
+      "gsap.utils.random(${1:range}, ${2:options});"
+    ],
+    "description": "GSAP utils random()"
+  },
+  "GSAP utils wrap": {
+    "prefix": "gswrap,gsuwrap",
+    "body": [
+      "gsap.utils.wrap(${1:range}, ${2:input});"
+    ],
+    "description": "GSAP utils wrap()"
+  },
+  //! GSAP ScrollTrigger Basic Setup
+  "GSAP ScrollTrigger Basic": {
+    "prefix": "gsapscrollTigerSetup,gstscroll",
+    "body": [
+      "  scrollTrigger: {",
+      "    trigger: \"${1:element}\",",
+      "    start: \"${2:top center}\",",
+      "    end: \"${3:bottom center}\",",
+      "    scrub: ${4:true},",
+      "    markers: ${5:true}",
+      "  },",
+      "  ${6:animationProperties}",
+      "};"
+    ],
+    "description": "Basic GSAP ScrollTrigger setup with start, end, scrub, and markers."
+  },
+  "GSAP scrollTrigger Property": {
+    "prefix": "scro,scroll,scrollTr",
+    "body": [
+      "scrollTrigger: {",
+      "\t${2:properties}",
+      "},"
+    ],
+    "description": "GSAP scrollTrigger property: Triggers animations based on scroll position."
+  },
+  "GSAP trigger Property": {
+    "prefix": "tri,trig,trigg",
+    "body": [
+      "trigger: ${1:attribute};"
+    ],
+    "description": "GSAP trigger property"
+  },
+  "GSAP scroller Property": {
+    "prefix": "sc,scroll",
+    "body": [
+      "scroller: ${1:attribute};"
+    ],
+    "description": "GSAP scroller property"
+  },
+  "GSAP scrub Property": {
+    "prefix": "sc,scru,scrub",
+    "body": [
+      "scrub: ${1:1};"
+    ],
+    "description": "GSAP scrub property: Makes an animation's progress correspond directly with the scroll position."
+  },
+  "GSAP markers Property": {
+    "prefix": "ma,mark,marke",
+    "body": [
+      "markers: ${1:true};"
+    ],
+    "description": "GSAP markers property:  Used for debugging to visualize where scroll triggers start and end."
+  },
+  // ScrollTrigger onEnter Callback
+  "ScrollTrigger onEnter": {
+    "prefix": "stonenter",
+    "body": [
+      "onEnter: function() {",
+      "\t${1:/* your code */}",
+      "},"
+    ],
+    "description": "Callback function for when the ScrollTrigger enters the viewport."
+  },
+  // ScrollTrigger onLeave Callback
+  "ScrollTrigger onLeave": {
+    "prefix": "stonleave",
+    "body": [
+      "onLeave: function() {",
+      "\t${1:/* your code */}",
+      "},"
+    ],
+    "description": "Callback function for when the ScrollTrigger leaves the viewport."
+  },
+  // ScrollTrigger onEnterBack Callback
+  "ScrollTrigger onEnterBack": {
+    "prefix": "stonenterback",
+    "body": [
+      "onEnterBack: function() {",
+      "\t${1:/* your code */}",
+      "},"
+    ],
+    "description": "Callback function for when the ScrollTrigger re-enters from below the viewport."
+  },
+  // ScrollTrigger onLeaveBack Callback
+  "ScrollTrigger onLeaveBack": {
+    "prefix": "stonleaveback",
+    "body": [
+      "onLeaveBack: function() {",
+      "\t${1:/* your code */}",
+      "},"
+    ],
+    "description": "Callback function for when the ScrollTrigger leaves from above the viewport."
+  },
+  // ScrollTrigger End Trigger
+  "ScrollTrigger End Trigger": {
+    "prefix": "stendtrigger",
+    "body": [
+      "endTrigger: '${1:#endElement}',"
+    ],
+    "description": "Sets a different element to trigger the end of ScrollTrigger."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "name": "gsap-snippet",
+  "displayName": "GSAP Code Snippets",
+ "description": "A set of useful GSAP code snippets for faster animation development, including methods like ScrollTrigger, Tweens, Timeline, and more.",
+  "version": "1.0.0",
+  "publisher": "Omprakash",
+  "author": {
+    "name": "omprakash chauhan",
+    "url": "https://asmrdev.tech"
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "icon":"./images.png",
+  "categories": [
+    "Snippets",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "GSAP",
+    "GreenSock",
+    "Snippets",
+    "Animations",
+    "ScrollTrigger",
+    "CSS",
+    "HTML",
+    "JavaScript"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/gsap-snippets"
+  },
+  "license": "MIT",
+  "homepage": "https://your-website.com/gsap-snippets",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "devDependencies": {},
+  "features": [
+    {
+      "featureName": "Fast GSAP Animations",
+      "description": "Instantly add common GSAP animations with easy-to-use snippets like 'gsto' for gsap.to and 'gstscroll' for ScrollTrigger."
+    },
+    {
+      "featureName": "ScrollTrigger Integration",
+      "description": "Comprehensive ScrollTrigger methods and properties like 'scrub', 'pin', 'markers', and more for scroll-based animations."
+    },
+    {
+      "featureName": "Code Efficiency",
+      "description": "Save time on repetitive tasks with shorthand GSAP animation methods like 'gsto', 'gsto', 'gsfto' for gsap.to, gsap.from, and gsap.fromTo."
+    }
+  ],
+  "requirements": [
+    "VS Code version 1.60.0 or higher.",
+    "Basic knowledge of GSAP library."
+  ],
+  "extensionSettings": [
+    {
+      "settingName": "Enable/Disable Snippets",
+      "description": "Allows users to enable or disable specific GSAP snippet categories.",
+      "default": "enabled"
+    }
+  ],
+  "knownIssues": [
+    {
+      "issue": "Some shorthand may conflict with other extensions.",
+      "description": "Due to common shortcut prefixes, some GSAP snippets might conflict with other snippet extensions."
+    },
+    {
+      "issue": "Limited CSS animations support",
+      "description": "Currently, this extension focuses primarily on JavaScript-based GSAP animations and does not cover CSS-only animations."
+    }
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:html"
+  ]
+}
