@@ -1,65 +1,131 @@
-# gsap-snippet README
 
-This is the README for your extension "gsap-snippet". After writing up a brief description, we recommend including the following sections.
+# GSAP Snippets Extension
 
-## Features
+## Preview
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![Alt Text](images/gsap-greensock-snippets.gif)
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## ✨Features
+This extension comes packed with snippets that cover the most popular GSAP methods and properties, helping you write GSAP code faster and more efficiently.
 
-## Requirements
+### Included Snippets:
+#### Animation Methods:
+- **gsap.to()**: Animate from the current state to the specified properties.
+- **gsap.from()**: Animate from specific values to the current state.
+- **gsap.fromTo()**: Animate between specific starting and ending values.
+- **gsap.timeline()**: Create sequences of animations that play in order.
+#### ScrollTrigger Methods:
+- **ScrollTrigger.create()**: Set up scroll-based animations.
+- **pin, scrub, markers**: Common properties for scroll-based animations.
+#### Draggable:
+- Quick setup for making elements draggable with GSAP.
+#### Flip Plugin:
+- Transform states and flip them with animations.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Shortcut Examples:
 
-## Extension Settings
+The snippets are is inspired by [GreenSock's](https://greensock.com/) documentation.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Basics Methods
 
-For example:
+| Snippet   | Description                                      |
+| --------- | -------------------------------------------- |
+| `gto`     | gsap.to(selector,{toVars})                   |
+| `gsf`   | gsap.from(selector,{fromVars})                 |
+| `gfromTo` | gsap.fromTo(selector, {fromVars}, {toVars}); |
+| `gset`    | gsap.set(selector, {toVars});                |
+| `gtl`     | Create gsap timeline                         |
+| `gfromTo` | GSAP .fromTo() method                        |
 
-This extension contributes the following settings:
+### Defaults Properties
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+| Snippet    | Description                          |
+| ---------- | -------------------------------- |
+| `del`      | GSAP delay property: `delay:1`               |
+| `sca`      | GSAP Scale property: `scale:1`  |
+| `dur`     | GSAP Duration: `duration:1`                |
+| `rep`   | GSAP Repeat property: `repeat:0.5` |
+| `opa`   | GSAP Opacity property: `opacity:0.5` |
+| `yo`   | GSAP yoyo property: `yoyo:true` |
+| `rota`   | GSAP rotation property: `rotation:90` |
+| `pau`   | GSAP paused property: `paused:true` |
+| `onSt`   |GSAP onStart callback: `onStart:function()` |
+| `tra`   | GSAP transform property: `transform:translate()` |
+| `repea`   | GSAP  repeatDelay property: `repeatDelay:1` |
+| `eas`   |SAP ease property: `ease:inOut` |
+| `oncomp`   |GSAP onComplete callback: `onComplete:callback` |
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### GSAP Special Methods
 
-## Release Notes
+| Snippet  | Description                                                        |
+| -------- | -------------------------------------------------------------- |
+| `stagg`   | GSAP stagger property: `stagger:0.1`                         |
+| `gskill` | GSAP killTweensOf() method: `gsap.killTweensOf:target` |
 
-Users appreciate release notes as you update your extension.
+### GSAP Utils
 
-### 1.0.0
+| Snippet | Description                              |
+| ------- | ------------------------------------ |
+| `gsrand`   |GSAP utils random(): `gsap.utils.random(range,options)` |
+| `gswrap`   |GSAP utils wrap(): `gsap.utils.wrap(range,input)` |
 
-Initial release of ...
+### GSAP ScrollTrigger
 
-### 1.0.1
+| Snippet | Purpose                                |
+| ------- | -------------------------------------- |
+| `gstscroll`   |Basic GSAP ScrollTrigger setup: `scrollTrigger: {trigger:element,start:top center, end:bottom center, scrub:true,markers:true}` |
+| `scrollTr`   |GSAP scrollTrigger property:: `onComplete:callback` |
+| `trigg`   |GSAP trigger property: `trigger:attribute` |
+| `scroll`   |GSAP scroller property: `scroller:attribute` |
+| `scru`   |GSAP scrub property: `scrub:1` |
+| `mark`   |GSAP markers property: `markers:true` |
 
-Fixed issue #.
+### Utility methods
 
-### 1.1.0
+| Snippet        | Purpose                  |
+| -------------- | ------------------------ |
+| `gprefix`      | gsap.utils.checkPrefix() |
+| `gclamp`       | gsap.utils.clamp()       |
+| `gdistribute`  | gsap.utils.distribute()  |
+| `ginterpolate` | gsap.utils.interpolate() |
+| `gclamp`       | gsap.utils.clamp()       |
+| `gmapRange`    | gsap.utils.interpolate() |
+| `gnormalize`   | gsap.utils.normalize()   |
+| `gpipe`        | gsap.utils.pipe()        |
+| `grandomnum`   | gsap.utils.random()      |
+| `grandomarray` | gsap.utils.random([])    |
+| `gselector`    | gsap.utils.selector()    |
+| `gshuffle`     | gsap.utils.shuffle()     |
+| `gsplitColor`  | gsap.utils.splitColor()  |
+| `gtoArray`     | gsap.utils.toArray()     |
+| `gunitize`     | gsap.utils.unitize()     |
+| `gwrap`        | gsap.utils.gwrap()       |
+| `gwrapYoyo`    | gsap.utils.wrapYoyo()    |
 
-Added features X, Y, and Z.
 
----
+## Authors
 
-## Working with Markdown
+- [@omprakash](https://github.com/omprakash2929)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## 🛠️ Requirements
+- Visual Studio Code version 1.60.0 or higher.
+- Basic understanding of GSAP is recommended to use the snippets effectively
 
-## For more information
+## ⚙️ Extension Settings
+This extension does not include any specific configuration settings. All snippets will be available automatically once installed. However, if you'd like to disable specific snippets, you can do so via VS Code's User Snippets settings.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## 🚧 Known Issues
 
-**Enjoy!**
+- **Conflicting Shortcuts**: Some common snippet prefixes (like to or fr) may conflict with other snippet extensions or built-in VS Code IntelliSense.
+- **CSS Support**: This extension currently focuses on JavaScript-based GSAP animations and doesn’t fully support CSS-only animations.
+If you encounter any other issues, please feel free to report them in the issues section on GitHub.
+
+## 🔧 Contributing
+Contributions are welcome! If you have ideas for additional snippets, improvements, or bug fixes, feel free to submit a pull request or create an issue in the GitHub repository.
+
+# 🎉 Conclusion
+The **GSAP GreenSock Snippets** extension is the perfect tool for animators and developers looking to speed up their GSAP development workflow. With ready-made snippets for the most commonly used GSAP methods, you'll be animating faster and with fewer errors, whether you’re just getting started or you're a seasoned pro!
