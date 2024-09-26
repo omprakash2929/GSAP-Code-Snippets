@@ -43,7 +43,7 @@
     "url": "https://github.com/omprakash2929/GSAP-Code-Snippets"
   },
   "license": "MIT",
-  "homepage": "https://your-website.com/gsap-snippets",
+  "homepage": "https://github.com/omprakash2929/GSAP-Code-Snippets/blob/main/README.md",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1"
   },
