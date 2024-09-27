@@ -3,7 +3,7 @@
 
 ## Preview
 
-![Alt Text](images/gsap-greensock-snippets.gif)
+![Alt Text](Image/demo.gif)
 
 
 
